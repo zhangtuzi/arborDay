@@ -6,6 +6,8 @@ html {
 }
 
 body {
+  width:100%;
+  overflow: hidden;
     font-family: "Microsoft YaHei";
     width: 100%;
     background: url('../images/arborday_bg.jpg') no-repeat;

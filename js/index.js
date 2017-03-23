@@ -1,6 +1,5 @@
 
     $(document).ready(function() {
-
         (function() {
             $('.tool b').each(function(index, el) {
                 if ($(this).text() == 0) {
