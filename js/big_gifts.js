@@ -12,12 +12,20 @@ $("#progress_num").html(progress_num);
 
 $("#coupons li").bind("click",function () { // 使用说明
   $(".mengceng").css("display","block");
+  var window_height=$(window).height();
+  $(".wrapper").height(window_height);
+  $(".wrapper").css("overflow","hidden");
+
   $("#use_instruction").css("display","block");
 });
 
 $("#close_lll").bind("click",function () { // 关闭使用说明弹层
   $(".mengceng").css("display","none");
   $("#use_instruction").css("display","none");
+
+  $(".wrapper").height($("body").height());
+  $(".wrapper").css("overflow","auto");
+
 });
 
 $("#btn_get").bind("click",function () {  // 领取
