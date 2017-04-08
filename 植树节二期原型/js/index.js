@@ -98,7 +98,6 @@
                     'height': Height * 1.9,
                     'width': Width * 1.2
                 });
-                $('.chongchong').css({'top':'0.4rem'});
                 $('.fruit').css({'width':'0.6rem','top':'0.7rem','left':'1.2rem'});
                 $('.fruit_flash').css({'width':'1.2rem','top':'0.45rem','left':'0.8rem'});
                 $('.tree').css('margin-left', '-' + widX / 2 + 'px');
@@ -119,7 +118,6 @@
                     'height': Height * 2,
                     'width': Width * 1.1
                 });
-                $('.chongchong').css({'top':'0.3rem','right':'1rem'});
                 $('.fruit').css({'width':'0.6rem','top':'0.4rem','left':'1.5rem'});
                 $('.fruit_flash').css({'width':'1.3rem','top':'0.1rem','left':'1.2rem'});
                 $('.tree').css('margin-left', '-' + widX / 2 + 'px');
@@ -450,7 +448,6 @@
                                           'height': shuheight + 'px',
                                           'width': shuwidth + 'px'
                                       });
-                                      $('.chongchong').css('top','0.4rem');
                                       $('.fruit').css({'width':'0.6rem','top':'0.7rem','left':'1.2rem'});
                                       $('.fruit_flash').css({'width':'1.2rem','top':'0.45rem','left':'0.8rem'});
                                       $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
@@ -469,7 +466,6 @@
                                           'height': shuheight + 'px',
                                           'width': shuwidth + 'px'
                                       });
-                                      $('.chongchong').css({'top':'0.3rem','right':'1rem'});
                                       $('.fruit').css({'width':'0.6rem','top':'0.4rem','left':'1.5rem'});
                                       $('.fruit_flash').css({'width':'1.3rem','top':'0.1rem','left':'1.2rem'});
                                       $('.tree').css('margin-left', '-' + shuwidth / 2 + 'px');
