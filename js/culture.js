@@ -18,7 +18,20 @@ var Func={
     var tcID_height=$('#'+tcID+'').height();
     $('#'+tcID+'').css('top',(win_height-tcID_height)/2);
   },
-  // 激活成功或者失败
+  // 加载小蒙层动画
+  jz_flash:function(){
+      var jz_i=0;
+      jz_setval=setInterval(function(){
+          if(jz_i>$('.jz_sy').length-2){
+            jz_i=0;
+          }else{
+            jz_i++;
+          }
+          $('.jz_sy').removeClass('jz_yd');
+          $('.jz_sy').eq(jz_i).addClass('jz_yd');
+      },500)
+    },
+  // 激活成功后
   jh_tc:function(){
     var jh_suc=$('#jh_con').css('display');//激活成功弹层是否显示
     if(jh_suc=='block'){//激活弹层显示
@@ -29,52 +42,60 @@ var Func={
       $('.jq_qd').html(jhcg_p);
       $('.jq_qd').removeClass('height130').addClass('height60');
     }
-  }
+  },
 
+  // 激活中小蒙层出现3s后消失
+  jz_flash_zx:function(){
+    //中奖弹层隐藏，加载中小蒙层出现并且动画，3s后小弹层消失，激活成功弹层出现
+    $('.use_con').hide();
+    $('.mc,.jz_mc').show();
+    Func.jz_flash();
+    setTimeout(function(){
+      clearInterval(jz_setval);
+      $('.jz_mc').hide();
+
+    },3000)
+  },
+  //激活成功弹层
+  jh_suc:function(){
+    Func.jz_flash_zx();
+    setTimeout(function(){
+      Func.tc_jz('jh_con');
+      $('#jh_con').show();
+    },3000)
+  },
+  //激活失败弹层
+  jh_fail:function(){
+    Func.jz_flash_zx();
+    setTimeout(function(){
+      Func.tc_jz('jh_fail');
+      $('#jh_fail').show();
+    },3000)
+  },
 }
-
-
-
-
-
-
-
-  // 领取弹层居中
-  var use_con_height=$('#use_con').height();
-  $('#use_con').css('top',(win_height-use_con_height)/2);
-
-
-
   $('.ljlq_btn').bind('click',function(){
-    if($(this).hasClass('ljjh_Btn2')){
-      $('.use_con').hide();
-      $('.mc,.jz_mc').show();
-      jz_flash();
+    if($(this).hasClass('ljjh_Btn2')){//领取按钮变成了激活按钮，并且激活失败
+      Func.jh_fail();
       setTimeout(function(){
-        clearInterval(jz_setval);
-        $('.jz_mc').hide();
         Func.tc_jz('jh_fail');
         $('#jh_fail').show();
       },3000)
     }else{
       if(!$(this).hasClass('ljjh_Btn')){//领取按钮第一次点击
-        $(this).attr('class','ljjh_Btn');
-        $(this).text('立即激活');
-        $('.mc,#use_con').show();
-        $('.ljlq_btn').unbind('click');
+        if($(this).hasClass('lqsb')){//领取失败弹层
+          Func.tc_jz('use_fail');
+          $('.mc,#use_fail').show();
+        }else{//领取成功弹层
+          $(this).attr('class','ljjh_Btn');
+          $(this).text('立即激活');
+          Func.tc_jz('use_con');
+          $('.mc,#use_con').show();
+          $('.ljlq_btn').unbind('click');
+        }
       }else{//领取按钮变成了激活按钮
-
-          //中奖弹层隐藏，加载中小蒙层出现并且动画，3s后小弹层消失，激活成功弹层出现
-          $('.use_con').hide();
-          $('.mc,.jz_mc').show();
-          jz_flash();
+          Func.jh_fail();
           setTimeout(function(){
-            clearInterval(jz_setval);
-            $('.jz_mc').hide();
-            // 激活成功弹层居中
-            var win_height=$(window).height();
-            var jh_con_height=$('#jh_con').height();
-            $('#jh_con').css('top',(win_height-jh_con_height)/2);
+            Func.tc_jz('jh_con');
             $('.mc,#jh_con').show();
             Func.jh_tc();
           },3000)
@@ -86,20 +107,7 @@ var Func={
 
   //中奖弹层隐藏，加载中小蒙层出现并且动画，3s后小弹层消失，激活弹层出现
   $('#ljjh_Btn').click(function(){
-    $('.use_con').hide();
-    $('.mc,.jz_mc').show();
-    jz_flash();
-    setTimeout(function(){
-      clearInterval(jz_setval);
-      $('.jz_mc').hide();
-      // 激活成功弹层居中
-      var win_height=$(window).height();
-      var jh_con_height=$('#jh_con').height();
-      $('#jh_con').css('top',(win_height-jh_con_height)/2);
-      $('.use_con').hide();
-      $('#jh_con').show();
-      Func.jh_tc();
-    },3000)
+    Func.jh_suc();
 
   })
 
@@ -113,22 +121,5 @@ var Func={
   $('.close_lll,.close_lll_b').click(function(){
     $('.mc,.use_con').hide();
   })
-
-
-
-// 加载小蒙层动画
-
-  function jz_flash(){
-    var jz_i=0;
-    jz_setval=setInterval(function(){
-        if(jz_i>$('.jz_sy').length-2){
-          jz_i=0;
-        }else{
-          jz_i++;
-        }
-        $('.jz_sy').removeClass('jz_yd');
-        $('.jz_sy').eq(jz_i).addClass('jz_yd');
-    },500)
-  }
 
 })

@@ -2,8 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>连环抽奖</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>连环抽奖</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/new3_treasure.css">
     <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
@@ -11,12 +16,14 @@
     <script src="js/new3_treasure.js" charset="utf-8"></script>
   </head>
   <body>
-  <div class="warpAll">
     <img src="images/arborDay3/description_bg.png" class="body_bg1" alt="">
+    <a href="new3_hdgz.html"><div class="hd_gz">活动规则</div></a>
+  <div class="warpAll">
+
     <img src="images/arborDay3/treasure_tit.png" class="treasure_tit" alt="">
     <p class="hd_date">2017年03月12日-12月30日</p>
     <p class="tip_top">还有<span class="color1">50</span>培养值，就可获得<span class="color1">1</span>次抽奖机会哦</p>
-    <a href="new3_hdgz.html"><div class="hd_gz">活动规则</div></a>
+
     <!-- 主要区域 -->
     <div class="main_div">
       <div class="description_nr">
@@ -82,46 +89,6 @@
       <div class="go_btn">您还有<span class="color2">2</span>次抽奖机会，去抽奖</div>
     </div>
 
-    <!-- 抽奖宝箱蒙层 -->
-    <div class="mc"></div>
-    <div class="tc_div">
-      <img src="images/arborDay3/mc_tit.png" class="mc_tit z_110">
-      <img src="images/arborDay3/box_star.png" class="box_star z_110">
-      <img src="images/arborDay3/box.png" class="box_icon z_110">
-      <p class="mc_mes z_110">亲，您当前剩余<span class="color2">2</span>次抽奖机会</p>
-      <div class="mcBtn_div z_110">
-        <div class="backActive mcBtn fl">返回活动</div>
-        <a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html">
-          <div class="myGifts mcBtn fr">我的奖品</div>
-        </a>
-      </div>
-    </div>
-
-
-    <!-- 中奖弹层失败 -->
-    <div class="use_con" id="cj_fail">
-        <img src="images/congratulate_lll.png" class="congratulate_lll">
-        <img src="images/fail_wz.png" class="congratulate_word_lll">
-        <div class="use_get">
-          <img src="images/close_lll.png" class="close_lll" id="use_close">
-        <p class="color666">差点中奖，不要气馁，再去试一试吧！</p>
-            <div class="btn_cons">
-                <button class="btn_tan myGiftBtn" id="cj_again">继续抽奖</button>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- 加载小蒙层 -->
-    <ul class="jz_mc">
-      <div class="jz_text">抽奖中 请稍后...</div>
-      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy jz_yd"></li>
-      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-    </ul>
 
   <!-- 奖品详情弹层 -->
   <div class="use_instruction" id="use_instruction">
@@ -166,6 +133,47 @@
         </div>
 
   </div>
+
+      <!-- 抽奖宝箱蒙层 -->
+      <div class="mc"></div>
+      <div class="tc_div">
+        <img src="images/arborDay3/mc_tit.png" class="mc_tit z_110">
+        <img src="images/arborDay3/box_star.png" class="box_star z_110">
+        <img src="images/arborDay3/box.png" class="box_icon z_110">
+        <p class="mc_mes z_110">亲，您当前剩余<span class="color2">2</span>次抽奖机会</p>
+        <div class="mcBtn_div z_110">
+          <div class="backActive mcBtn fl">返回活动</div>
+          <a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html">
+            <div class="myGifts mcBtn fr">我的奖品</div>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- 中奖弹层失败 -->
+      <div class="use_con" id="cj_fail">
+          <img src="images/congratulate_lll.png" class="congratulate_lll">
+          <img src="images/fail_wz.png" class="congratulate_word_lll">
+          <div class="use_get">
+            <img src="images/close_lll.png" class="close_lll" id="use_close">
+          <p class="color666">差点中奖，不要气馁，再去试一试吧！</p>
+              <div class="btn_cons">
+                  <button class="btn_tan myGiftBtn" id="cj_again">继续抽奖</button>
+              </div>
+          </div>
+      </div>
+
+
+      <!-- 加载小蒙层 -->
+      <ul class="jz_mc">
+        <div class="jz_text">抽奖中 请稍后...</div>
+        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy jz_yd"></li>
+        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      </ul>
   <script type="text/javascript">
   $(function(){
 
@@ -210,7 +218,7 @@
     //继续抽奖
     $('#cj_again').click(function(){
       $('.use_con').hide();
-      $('.tc_div').show(); 
+      $('.tc_div').show();
     })
 
     // 加载小蒙层动画
@@ -231,7 +239,7 @@
 
 
 
-
+      var win_height=$(window).height();
         // 宝箱动画
 
         function box_icon_flash(){
@@ -239,94 +247,212 @@
           box_flash=setInterval(function(){
             switch (gift_i%32){
                 case 0:
-                $('.box_icon').css({
-                   'top':'4.09rem',
-                  'transform':'rotate(3deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.59rem',
+                    'transform':'rotate(3deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.09rem',
+                    'transform':'rotate(3deg)'
+                  },50);
+                }
                 break;
                 case 1:
-                $('.box_icon').css({
-                   'top':'4.07rem',
-                  'transform':'rotate(6deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.57rem',
+                    'transform':'rotate(6deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.07rem',
+                    'transform':'rotate(6deg)'
+                  },50);
+                }
+
                 break;
                 case 2:
-                $('.box_icon').css({
-                   'top':'4.05rem',
-                  'transform':'rotate(9deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.55rem',
+                    'transform':'rotate(9deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.05rem',
+                    'transform':'rotate(9deg)'
+                  },50);
+                }
+
                 break;
                 case 3:
-                $('.box_icon').css({
-                   'top':'4.04rem',
-                  'transform':'rotate(11deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.54rem',
+                    'transform':'rotate(11deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.04rem',
+                    'transform':'rotate(11deg)'
+                  },50);
+                }
+
                 break;
                 case 4:
-                $('.box_icon').css({
-                  'top':'4.05rem',
-                  'transform':'rotate(9deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.55rem',
+                    'transform':'rotate(9deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.05rem',
+                    'transform':'rotate(9deg)'
+                  },50);
+                }
+
                 break;
                 case 5:
-                $('.box_icon').css({
-                   'top':'4.07rem',
-                  'transform':'rotate(6deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.57rem',
+                    'transform':'rotate(6deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.07rem',
+                    'transform':'rotate(6deg)'
+                  },50);
+                }
                 break;
                 case 6:
-                $('.box_icon').css({
-                  'top':'4.09rem',
-                  'transform':'rotate(3deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.59rem',
+                    'transform':'rotate(3deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.09rem',
+                    'transform':'rotate(3deg)'
+                  },50);
+                }
+
                 break;
                 case 7:
-                $('.box_icon').css({
-                   'top':'4.09rem',
-                  'transform':'rotate(-3deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.59rem',
+                    'transform':'rotate(-3deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.09rem',
+                    'transform':'rotate(-3deg)'
+                  },50);
+                }
+
                 break;
                 case 8:
-                $('.box_icon').css({
-                   'top':'4.07rem',
-                  'transform':'rotate(-6deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.57rem',
+                    'transform':'rotate(-6deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.07rem',
+                    'transform':'rotate(-6deg)'
+                  },50);
+                }
+
                 break;
                 case 9:
-                $('.box_icon').css({
-                   'top':'4.05rem',
-                  'transform':'rotate(-9deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.55rem',
+                    'transform':'rotate(-9deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.05rem',
+                    'transform':'rotate(-9deg)'
+                  },50);
+                }
+
                 break;
                 case 10:
-                $('.box_icon').css({
-                   'top':'4.04rem',
-                  'transform':'rotate(-11deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.54rem',
+                    'transform':'rotate(-11deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.04rem',
+                    'transform':'rotate(-11deg)'
+                  },50);
+                }
+
                 break;
                 case 11:
-                $('.box_icon').css({
-                   'top':'4.05rem',
-                  'transform':'rotate(-9deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.55rem',
+                    'transform':'rotate(-9deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.05rem',
+                    'transform':'rotate(-9deg)'
+                  },50);
+                }
+
                 break;
                 case 12:
-                $('.box_icon').css({
-                   'top':'4.07rem',
-                  'transform':'rotate(-6deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.57rem',
+                    'transform':'rotate(-6deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.07rem',
+                    'transform':'rotate(-6deg)'
+                  },50);
+                }
+
                 break;
                 case 13:
-                $('.box_icon').css({
-                  'top':'4.09rem',
-                  'transform':'rotate(-3deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.59rem',
+                    'transform':'rotate(-3deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.09rem',
+                    'transform':'rotate(-3deg)'
+                  },50);
+                }
+
                 break;
                 default:
-                $('.box_icon').css({
-                  'top':'4.1rem',
-                   'transform':'rotate(0deg)'
-                },50);
+                if(win_height<500){
+                  $('.box_icon').css({
+                     'top':'3.6rem',
+                    'transform':'rotate(0deg)'
+                  },50);
+                }else{
+                  $('.box_icon').css({
+                     'top':'4.1rem',
+                    'transform':'rotate(0deg)'
+                  },50);
+                }
+
                 break;
 
               }
