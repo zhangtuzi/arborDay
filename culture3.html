@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/culture.css">
     <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
     <script src="js/public640.js" charset="utf-8"></script>
+    <script src="js/culture.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="warpAll">
@@ -20,7 +21,7 @@
       <!-- 奖品抢夺已经抢光部分 -->
 
       <div class="jq_qd height130">
-        <p>恭喜您已完成活动任务，赶紧<span class="color1">领取流量包</span>去吧！~</p>
+        <p>恭喜您已完成活动任务，赶紧<span class="color1">领取流量包</span>去吧！</p>
         <div class="ljlq_btn">立即领取</div>
       </div>
 
@@ -96,20 +97,5 @@
     </div>
 
 
-    <script type="text/javascript">
-      $(function(){
-        var win_height=$(window).height();
-        var body_height=$('body').height();
-        if(win_height<body_height+60){
-          // 当页面内容超过一屏幕时
-          $('.hd_gz_nr').css('margin-bottom',"0.6rem");
-          $('.warpAll').css("min-height",body_height);
-        }else{
-          // 当页面内容不足一屏幕时
-           $('.warpAll').css("min-height",win_height);
-        }
-
-      })
-    </script>
   </body>
 </html>

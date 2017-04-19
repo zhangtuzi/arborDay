@@ -98,21 +98,15 @@
     </div>
 
 
-    <!-- 中奖弹层 -->
-    <div class="use_con" id="use_con">
+    <!-- 中奖弹层失败 -->
+    <div class="use_con" id="cj_fail">
         <img src="images/congratulate_lll.png" class="congratulate_lll">
-        <img src="images/congratulate_word_lll.png" class="congratulate_word_lll">
+        <img src="images/fail_wz.png" class="congratulate_word_lll">
         <div class="use_get">
           <img src="images/close_lll.png" class="close_lll" id="use_close">
-        <p class="color666">获得
-          <span class="colorf6661b">1GB流量日包</span>，
-          请到“<a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html" style="color:#0066ff;">我的背包</a>”页面查看使用吧~
-        </p>
+        <p class="color666">现在参加活动的小伙伴很多，一会再来试一试吧！</p>
             <div class="btn_cons">
-                <a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html">
-                  <button class="btn_tan myGiftBtn" id="myGiftBtn">我的奖品</button>
-                </a>
-                <button class="btn_tan btn_share" id="btn_share">炫耀一下</button>
+                <button class="btn_tan myGiftBtn" id="Ikonw">我知道了</button>
             </div>
         </div>
     </div>
@@ -173,170 +167,173 @@
 
   </div>
   <script type="text/javascript">
-    $(function(){
+  $(function(){
 
-      // 点击出现弹层
-      $('.go_btn').click(function(){
-        box_icon_flash();
-        $('.mc,.tc_div').show();
-      })
-      // 隐藏宝箱弹层
-      $('.backActive').click(function(){
-        $('.mc,.tc_div').hide();
-        clearInterval(box_flash);
-      })
-        // 点击宝箱
-        $('.box_icon').click(function(){
-          clearInterval(box_flash);//清除宝箱动画
-          $('.jz_mc').show();
-          jz_flash();//加载小蒙层动画
-          setTimeout(function(){
-            clearInterval(jz_setval);
-            $('.jz_mc').hide();
-            $('.tc_div').hide();
-            $('.use_con').show();
-          },3000)
-        })
-
-      // 奖品详情弹层弹出
-      $('.gift_ul li').click(function(){
-        $('.mc,.use_instruction').show();
-        $('.use_rule_word_con').scrollTop(0);
+    // 点击出现弹层
+    $('.go_btn').click(function(){
+      box_icon_flash();
+      $('.mc,.tc_div').show();
+    })
+    // 隐藏宝箱弹层
+    $('.backActive').click(function(){
+      $('.mc,.tc_div').hide();
+      clearInterval(box_flash);
+    })
+      // 点击宝箱
+      $('.box_icon').click(function(){
+        clearInterval(box_flash);//清除宝箱动画
+        $('.jz_mc').show();
+        jz_flash();//加载小蒙层动画
+        setTimeout(function(){
+          clearInterval(jz_setval);
+          $('.jz_mc').hide();
+          $('.tc_div').hide();
+          $('.use_con').show();
+        },3000)
       })
 
+    // 奖品详情弹层弹出
+    $('.gift_ul li').click(function(){
+      $('.mc,.use_instruction').show();
+      $('.use_rule_word_con').scrollTop(0);
+    })
+    // 奖品详情弹层关闭
+    $('#close_lll').click(function(){
+      $('.mc,.use_instruction').hide();
+    })
 
-      // 奖品详情弹层关闭
-      $('#close_lll').click(function(){
-        $('.mc,.use_instruction').hide();
-      })
+    // 中奖弹层关闭
+    $('#use_close').click(function(){
+      $('.mc,.use_con').hide();
+    })
 
-      // 中奖弹层关闭
-      $('#use_close').click(function(){
-        $('.mc,.use_con').hide();
-      })
+    //我知道了
+    $('#Ikonw').click(function(){
+      $('.mc,.use_con').hide();
+    })
 
-      // 加载小蒙层动画
-        var jz_setval;
-        function jz_flash(){
-          var jz_i=0;
-          jz_setval=setInterval(function(){
-              if(jz_i>$('.jz_sy').length-2){
-                jz_i=0;
-              }else{
-                jz_i++;
+    // 加载小蒙层动画
+      var jz_setval;
+      function jz_flash(){
+        var jz_i=0;
+        jz_setval=setInterval(function(){
+            if(jz_i>$('.jz_sy').length-2){
+              jz_i=0;
+            }else{
+              jz_i++;
+            }
+            $('.jz_sy').removeClass('jz_yd');
+            $('.jz_sy').eq(jz_i).addClass('jz_yd');
+        },500)
+      }
+
+
+
+
+
+        // 宝箱动画
+
+        function box_icon_flash(){
+          var gift_i=0;
+          box_flash=setInterval(function(){
+            switch (gift_i%32){
+                case 0:
+                $('.box_icon').css({
+                   'top':'4.09rem',
+                  'transform':'rotate(3deg)'
+                },50);
+                break;
+                case 1:
+                $('.box_icon').css({
+                   'top':'4.07rem',
+                  'transform':'rotate(6deg)'
+                },50);
+                break;
+                case 2:
+                $('.box_icon').css({
+                   'top':'4.05rem',
+                  'transform':'rotate(9deg)'
+                },50);
+                break;
+                case 3:
+                $('.box_icon').css({
+                   'top':'4.04rem',
+                  'transform':'rotate(11deg)'
+                },50);
+                break;
+                case 4:
+                $('.box_icon').css({
+                  'top':'4.05rem',
+                  'transform':'rotate(9deg)'
+                },50);
+                break;
+                case 5:
+                $('.box_icon').css({
+                   'top':'4.07rem',
+                  'transform':'rotate(6deg)'
+                },50);
+                break;
+                case 6:
+                $('.box_icon').css({
+                  'top':'4.09rem',
+                  'transform':'rotate(3deg)'
+                },50);
+                break;
+                case 7:
+                $('.box_icon').css({
+                   'top':'4.09rem',
+                  'transform':'rotate(-3deg)'
+                },50);
+                break;
+                case 8:
+                $('.box_icon').css({
+                   'top':'4.07rem',
+                  'transform':'rotate(-6deg)'
+                },50);
+                break;
+                case 9:
+                $('.box_icon').css({
+                   'top':'4.05rem',
+                  'transform':'rotate(-9deg)'
+                },50);
+                break;
+                case 10:
+                $('.box_icon').css({
+                   'top':'4.04rem',
+                  'transform':'rotate(-11deg)'
+                },50);
+                break;
+                case 11:
+                $('.box_icon').css({
+                   'top':'4.05rem',
+                  'transform':'rotate(-9deg)'
+                },50);
+                break;
+                case 12:
+                $('.box_icon').css({
+                   'top':'4.07rem',
+                  'transform':'rotate(-6deg)'
+                },50);
+                break;
+                case 13:
+                $('.box_icon').css({
+                  'top':'4.09rem',
+                  'transform':'rotate(-3deg)'
+                },50);
+                break;
+                default:
+                $('.box_icon').css({
+                  'top':'4.1rem',
+                   'transform':'rotate(0deg)'
+                },50);
+                break;
+
               }
-              $('.jz_sy').removeClass('jz_yd');
-              $('.jz_sy').eq(jz_i).addClass('jz_yd');
-          },500)
+              gift_i++;
+            },50)
         }
 
-
-
-
-
-          // 宝箱动画
-
-          function box_icon_flash(){
-            var gift_i=0;
-            box_flash=setInterval(function(){
-              switch (gift_i%32){
-                  case 0:
-                  $('.box_icon').css({
-                     'top':'4.09rem',
-                    'transform':'rotate(3deg)'
-                  },50);
-                  break;
-                  case 1:
-                  $('.box_icon').css({
-                     'top':'4.07rem',
-                    'transform':'rotate(6deg)'
-                  },50);
-                  break;
-                  case 2:
-                  $('.box_icon').css({
-                     'top':'4.05rem',
-                    'transform':'rotate(9deg)'
-                  },50);
-                  break;
-                  case 3:
-                  $('.box_icon').css({
-                     'top':'4.04rem',
-                    'transform':'rotate(11deg)'
-                  },50);
-                  break;
-                  case 4:
-                  $('.box_icon').css({
-                    'top':'4.05rem',
-                    'transform':'rotate(9deg)'
-                  },50);
-                  break;
-                  case 5:
-                  $('.box_icon').css({
-                     'top':'4.07rem',
-                    'transform':'rotate(6deg)'
-                  },50);
-                  break;
-                  case 6:
-                  $('.box_icon').css({
-                    'top':'4.09rem',
-                    'transform':'rotate(3deg)'
-                  },50);
-                  break;
-                  case 7:
-                  $('.box_icon').css({
-                     'top':'4.09rem',
-                    'transform':'rotate(-3deg)'
-                  },50);
-                  break;
-                  case 8:
-                  $('.box_icon').css({
-                     'top':'4.07rem',
-                    'transform':'rotate(-6deg)'
-                  },50);
-                  break;
-                  case 9:
-                  $('.box_icon').css({
-                     'top':'4.05rem',
-                    'transform':'rotate(-9deg)'
-                  },50);
-                  break;
-                  case 10:
-                  $('.box_icon').css({
-                     'top':'4.04rem',
-                    'transform':'rotate(-11deg)'
-                  },50);
-                  break;
-                  case 11:
-                  $('.box_icon').css({
-                     'top':'4.05rem',
-                    'transform':'rotate(-9deg)'
-                  },50);
-                  break;
-                  case 12:
-                  $('.box_icon').css({
-                     'top':'4.07rem',
-                    'transform':'rotate(-6deg)'
-                  },50);
-                  break;
-                  case 13:
-                  $('.box_icon').css({
-                    'top':'4.09rem',
-                    'transform':'rotate(-3deg)'
-                  },50);
-                  break;
-                  default:
-                  $('.box_icon').css({
-                    'top':'4.1rem',
-                     'transform':'rotate(0deg)'
-                  },50);
-                  break;
-
-                }
-                gift_i++;
-              },50)
-          }
-
-    })
+  })
   </script>
   </body>
 </html>

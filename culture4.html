@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/culture.css">
     <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
     <script src="js/public640.js" charset="utf-8"></script>
+    <script src="js/culture.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="warpAll">
@@ -17,7 +18,7 @@
       <img src="images/arborDay3/yll_title.png" class="yll_title">
       <p class="hd_date">2017年5月10日-5月17日</p>
 
-      <!-- 奖品抢夺已经抢光部分 -->
+      <!-- 用户在5月17号进入活动页面展示（秒杀奖品未抢完） -->
 
       <div class="jq_qd height130">
         <p>恭喜您已完成活动任务，赶紧<span class="color1">领取流量包</span>去吧！</p>
@@ -107,53 +108,39 @@
           请到“<a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html" style="color:#0066ff;">我的奖品</a>”页面查看使用吧~
         </p>
             <div class="btn_cons">
-                <button class="btn_tan myGiftBtn" id="myGiftBtn">立即激活</button>
+                <button class="btn_tan myGiftBtn" id="ljjh_Btn">立即激活</button>
                 <button class="btn_tan btn_share" id="btn_share">炫耀一下</button>
             </div>
         </div>
     </div>
 
+    <!-- 激活成功弹层 -->
+    <div class="use_con" id="jh_con">
+        <img src="images/congratulate_lll.png" class="congratulate_lll">
+        <img src="images/congratulate_word_lll.png" class="congratulate_word_lll">
+        <div class="use_get">
+          <img src="images/close_lll.png" class="close_lll" id="use_close">
+        <p class="color666">已成功激活
+          <span class="colorf6661b">1GB流量日包</span>，
+          请到“<a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html" style="color:#0066ff;">我的奖品</a>”页面查看查看吧~
+        </p>
+            <div class="btn_cons">
+                <button class="btn_tan btn_share" id="btn_share">炫耀一下</button>
+                <button class="btn_tan myGiftBtn" id="konwBtn">我知道了</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- 加载小蒙层 -->
+    <ul class="jz_mc">
+      <div class="jz_text">激活中 请稍后...</div>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy jz_yd"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+    </ul>
 
-
-    <script type="text/javascript">
-      $(function(){
-        var win_height=$(window).height();
-        var body_height=$('body').height();
-        if(win_height<body_height+60){
-          // 当页面内容超过一屏幕时
-          $('.hd_gz_nr').css('margin-bottom',"0.6rem");
-          $('.warpAll').css("min-height",body_height);
-        }else{
-          // 当页面内容不足一屏幕时
-           $('.warpAll').css("min-height",win_height);
-        }
-
-
-        // 领取弹层出现
-        var use_con_height=$('#use_con').height();
-        $('#use_con').css('top',(win_height-use_con_height)/2);
-
-        $('.ljlq_btn').bind('click',function(){
-          if(!$(this).hasClass('ljjh_Btn')){//领取按钮第一次点击
-            $(this).attr('class','ljjh_Btn');
-            $(this).text('立即激活');
-            $('.mc,.use_con').show();
-            $('.ljlq_btn').unbind('click');
-          }else{//领取按钮变成了激活按钮
-            alert(2);
-          }
-
-        })
-
-
-
-
-        $('.close_lll').click(function(){
-          $('.mc,.use_con').hide();
-        })
-
-      })
-    </script>
   </body>
 </html>
