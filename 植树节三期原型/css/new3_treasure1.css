@@ -1,0 +1,294 @@
+
+  .warpAll{
+    width:6.4rem;
+    background:#f0eeb4;
+    font-family: "微软雅黑";
+    overflow-x: hidden;
+    position:relative;
+  }
+  .clr{
+    clear:both;
+  }
+  .body_bg1{
+    width:100%;
+    height:auto;
+  }
+  .treasure_tit{
+    position: absolute;
+    top:0.7rem;
+    left:1.67rem;
+    width:3.06rem;
+    z-index: 2;
+  }
+
+  .hd_date{
+    position: absolute;
+    top: 1.2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.2rem;
+    color:#57b554;
+  }
+  .tip_top{
+    position: absolute;
+    top: 1.7rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.22rem;
+    color:#666;
+  }
+  .color1{
+    color:#fe5605;
+  }
+
+.hd_gz{
+  position:absolute;
+  top:1rem;
+  right:-1px;
+  width:1rem;
+  height:0.3rem;
+  background: #a8cb3f;
+  font-size:0.17rem;
+  color:#fff;
+  line-height: 0.3rem;
+  text-align: center;
+  border:1px solid #f4df64;
+  border-radius:0.16rem 0 0 0.16rem;
+  box-shadow: 1px 1px 5px #bfc57a;
+}
+  .main_div{
+    position: absolute;
+    position: absolute;
+    top:2.4rem;
+    width:100%;
+  }
+  .description_nr{
+    width:5.8rem;
+    margin:0 auto;
+    margin-bottom:0.4rem;
+    position: relative;
+  }
+  .description_nr_bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .main_nr{
+    position: relative;
+    padding-top:1px;
+    width:5.44rem;
+    margin:0 auto;
+  }
+  .hx{
+    width:3.7rem;
+    height:1px;
+    background: #ffb37a;
+    margin:0.4rem auto 0;
+  }
+  .main_tit{
+    width:1.68rem;
+    height:0.55rem;
+    background: #fff;
+    padding:0 0.2rem;
+    line-height: 0.55rem;
+    color:#ff7712;
+    font-size:0.3rem;
+    margin:-0.3rem auto 0;
+  }
+  .main_tit_icon{
+    width:0.29rem;
+    margin-right:0.18rem;
+    margin-top:0.1rem;
+    /*margin-left:0.2rem;*/
+  }
+
+  /*礼品部分*/
+  .gift_ul li{
+    float:left;
+    margin:0.07rem;
+    border:1px solid #eee;
+    overflow: hidden;
+  }
+  .big_gift_li{
+    height:1.92rem;
+    border-radius: 0.2rem;
+    width:5.27rem;
+  }
+  .big_gift{
+    width:2rem;
+    margin-top:0.2rem;
+    margin-left:0.2rem;
+  }
+  .gift_mes_div1{
+    height:1.5rem;
+    width:2.3rem;
+    text-align: left;
+    margin-top:0.3rem;
+    line-height: 0.44rem;
+  }
+  .gift_tit1{
+    font-size:0.3rem;
+    color:#333;
+  }
+  .gift_tit2{
+    font-size:0.22rem;
+    color:#666;
+  }
+  .gift_xq{
+    font-size:0.18rem;
+    color:#fe5806;
+    text-decoration:underline;
+  }
+.small_gift_li{
+  width:2.54rem;
+  text-align: center;
+  border-radius:0.15rem;
+}
+.gift_pic1{
+  width:1.2rem;
+  height:0.9rem;
+  display: block;
+  margin:0.1rem auto;
+}
+.gift_pic2{
+  width:1.5rem;
+  height:0.9rem;
+  display: block;
+  margin:0.1rem auto;
+}
+.gift_tit3{
+  font-size:0.22rem;
+  color:#333;
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+.go_bg{
+  width:100%;
+  height:0.45rem;
+  line-height: 0.45rem;
+  background: #f2f2f2;
+}
+.space30{
+  height:0.3rem;
+}
+
+  .tip_div{
+    width:5.8rem;
+    margin:0 auto 1.5rem;
+  }
+  .tip_icon{
+    float:left;
+    width:0.23rem;
+    display: inline-block;
+  }
+  .tip_nr{
+    display:inline-block;
+    width:5.5rem;
+    margin-left:0.05rem;
+    font-size: 0.2rem;
+    color:#898989;
+  }
+
+  .bottomBtn_div{
+    width:100%;
+    height:1.5rem;
+    background: #f0eeb4;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index: 10;
+    text-align: center;
+  }
+  .go_btn{
+    margin:0.35rem auto;
+    width:6.08rem;
+    height:0.77rem;
+    background:url('../images/arborDay3/redBtn_bg.png');
+    background-size: 6.08rem;
+    border-radius:0.2rem;
+    text-align: center;
+    line-height: 0.77rem;
+    font-size:0.3rem;
+    color:#fff;
+  }
+  .color2{
+    color:#fffe0c;
+  }
+
+
+  /*蒙层部分*/
+  .mc,.tc_div{
+    width:100%;
+    height:12rem;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .mc{
+    background: #000;
+    opacity:0.7;
+  }
+  .tc_div img{
+    height:auto;
+    margin:0 auto;
+  }
+  .z_110{
+    z-index: 110;
+  }
+  .mc_tit{
+    flex:100;
+    margin-top:1.2rem;
+  }
+  .mc_tit img{
+    width:4.75rem;
+  }
+
+  .box_star{
+    flex:150;
+    position:relative;
+  }
+
+  .box_star img{
+    width:3.5rem;
+  }
+
+  .box_icon{
+    position: absolute;
+    top:0.1rem;
+    left:1.6rem;
+    width:3.2rem!important;
+  }
+  .mc_mes{
+    flex:50;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color:#fff;
+  }
+  .mcBtn_div{
+    flex:100;
+  }
+  .mcBtn{
+    width:2.51rem;
+    height:0.75rem;
+    text-align: center;
+    line-height: 0.75rem;
+    font-size:0.3rem;
+    color:#fff;
+  }
+  .backActive{
+    background:url("../images/arborDay3/grayBtn_bg.png");
+    background-size: 2.51rem 0.75rem;
+    margin-left:0.3rem;
+  }
+  .myGifts{
+    background:url("../images/arborDay3/orangeBtn_bg.png");
+    background-size: 2.51rem 0.75rem;
+    margin-right:0.3rem;
+  }

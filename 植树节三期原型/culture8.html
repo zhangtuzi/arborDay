@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>培养赢流量1</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/culture.css">
+    <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
+    <script src="js/public640.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="warpAll">
+      <div style="height:1.6rem;"></div>
+      <!-- 头部部分 -->
+      <img src="images/arborDay3/bg_tp.jpg" class="bg_top">
+      <img src="images/arborDay3/yll_title.png" class="yll_title">
+      <p class="hd_date">2017年5月10日-5月17日</p>
+
+      <!-- 奖品抢夺已经抢光部分 -->
+
+      <div class="jq_qd">
+        <p class="padding020">恭喜您，已获得2GB流量礼券，前往“<a class="color1 underline" href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html">我的奖品</a>”页面查看使用吧~</p>
+      </div>
+
+      <!-- 活动内容部分 -->
+      <div class="hd_nr_warp">
+        <div class="hd_nr_bg"></div>
+        <div class="hd_nr">
+
+          <!-- 活动流程部分开始 -->
+          <div class="hd_lc">
+            <div class="hx fl"></div>
+            <div class="hd_lc_tit fl">
+              <span>活</span>
+              <span>动</span>
+              <span>流</span>
+              <span>程</span>
+            </div>
+            <div class="hx fl"></div>
+            <div class="clr"></div>
+            <div class="space20"></div>
+            <ul class="hd_ll_ul">
+              <li>
+                <img src="images/arborDay3/hd_icon1.png" class="hd_ll_icon">
+                <p class="hd_ll_mes">活动预热期间完成培养任务</p>
+                <img src="images/arborDay3/Right_icon.png" class="Right_icon">
+              </li>
+              <li>
+                <img src="images/arborDay3/hd_icon2.png" class="hd_ll_icon">
+                <p class="hd_ll_mes">517当天可以领取流量礼包</p>
+                <img src="images/arborDay3/Right_icon.png" class="Right_icon">
+              </li>
+              <li>
+                <img src="images/arborDay3/hd_icon3.png" class="hd_ll_icon">
+                <p class="hd_ll_mes">进入“我的奖品”页面激活</p>
+              </li>
+
+            </ul>
+            <div class="clr"></div>
+          </div>
+          <!-- 活动流程部分结束 -->
+
+          <!-- 活动规则部分开始 -->
+          <div class="hd_gz">
+            <div class="space30"></div>
+            <div class="hx fl"></div>
+            <div class="hd_lc_tit fl">
+              <span>活</span>
+              <span>动</span>
+              <span>规</span>
+              <span>则</span>
+            </div>
+            <div class="hx fl"></div>
+            <div class="clr"></div>
+            <div class="space20"></div>
+            <div class="hd_gz_nr">
+              <p>1.活动规则活动规则活动规则活动规则活动规则活动规则活</p>
+              <p>2.活动规则活动规则活动规则活动规则活动规则活动规则活</p>
+              <p>3.活动规则活动规则活动规则活动规则活动规则活动规则活</p>
+            </div>
+
+          </div>
+
+
+          <div class="clr"></div>
+        </div>
+
+      </div>
+      <!-- 活动内容部分结束 -->
+      <img src="images/arborDay3/bg_bottom.png" class="bg_bottom">
+    </div>
+    <script type="text/javascript">
+    $(function(){
+      var win_height=$(window).height();
+      var body_height=$('body').height();
+      if(win_height<body_height+60){
+        // 当页面内容超过一屏幕时
+        $('.hd_gz_nr').css('margin-bottom',"0.6rem");
+        $('.warpAll').css("min-height",body_height);
+      }else{
+        // 当页面内容不足一屏幕时
+         $('.warpAll').css("min-height",win_height);
+      }
+
+    })
+    </script>
+  </body>
+</html>

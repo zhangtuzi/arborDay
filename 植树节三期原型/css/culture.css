@@ -1,0 +1,349 @@
+body{
+  background: #75e8ff;
+}
+.clr{
+  clear:both;
+}
+.warpAll{
+  width:6.4rem;
+  height:auto;
+  background:#75e8ff;
+  font-family: "微软雅黑";
+  position: relative;
+  margin:0 auto;
+  overflow: auto;
+}
+.body_bg_top,.bg_top{
+  width:6.4rem;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.yll_title{
+  width:3.27rem;
+  position:absolute;
+  left:1.57rem;
+  top:0.55rem;
+}
+.hd_date{
+  width:100%;
+  position: absolute;
+  left:0;
+  top:1.1rem;
+  text-align: center;
+  font-size:0.2rem;
+  color:#fff;
+}
+
+
+/*进度条部分*/
+.pro_warp{
+    position:relative;
+    text-align: center;
+    height:1rem;
+    margin:0.15rem 0.15rem 0;
+    background:rgba(255, 255, 255, 0.5);
+}
+.pro_tit{
+  width:100%;
+  text-align: center;
+  line-height: 0.5rem;
+  font-size:0.22rem;
+  color:#666;
+}
+.color1{
+  color:#fe4b05;
+}
+.pro_div{
+  width:5.8rem;
+  margin:0 auto;
+  height:0.35rem;
+  background:#fff;
+  border-radius:0.2rem;
+  box-shadow:0 1px 2px #aaa inset;
+  overflow:hidden;
+  position: relative;
+}
+.pro_w{
+  width:50%;
+  height:100%;
+  background: #89f166;
+  /*background-image: url('../images/arborDay3/promess_bg.png');*/
+  background: -webkit-linear-gradient(right, #fe5304, #ffce42);
+  background-color: #fe5304;
+  border-radius:0.2rem;
+}
+.pro_wz{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  font-size:0.25rem;
+  color:#333;
+  line-height: 0.35rem;
+  text-align: center;
+}
+
+/*奖品抢夺已经抢光部分*/
+.jq_qd{
+  position:relative;
+  text-align: center;
+  line-height: 0.5rem;
+  font-size:0.22rem;
+  color:#666;
+  height:1rem;
+  margin:0.15rem 0.15rem 0;
+  background:rgba(255, 255, 255, 0.5);
+}
+.height130{
+  height:1.3rem;
+}
+.height50{
+  height:0.5rem;
+}
+.padding020{
+  padding: 0.1rem 0.2rem;
+  line-height: 0.4rem;
+}
+.underline{
+  text-decoration: underline;
+}
+.dis_inlineB{
+  display:inline-block;
+}
+.next_date{
+  display:inline-block;
+  width:1.1rem;
+  height:0.35rem;
+  line-height: 0.35rem;
+  color: #fff;
+  background: url('../images/arborDay3/ljlq_bg.png');
+  background-size: 1.1rem 0.35rem;
+  margin-left:0.1rem;
+}
+
+.ljlq_btn,.ljjh_Btn{
+  margin:0.05rem auto;
+  width:2.5rem;
+  text-align: center;
+  font-size:0.24rem;
+  color:#fff;
+  height:0.6rem;
+  line-height: 0.65rem;
+  border-radius:0.1rem;
+  overflow: hidden;
+  background: url('../images/arborDay3/ljlq_bg.png');
+}
+
+
+/*未获得领取流量包机会*/
+.pro_tit_rows{
+  width:auto;
+  line-height: 0.3rem;
+  padding:0.1rem 0.2rem;
+  text-align:left;
+}
+
+
+
+/*活动内容部分*/
+.hd_nr_warp{
+  width:6.14rem;
+  position: relative;
+  margin:0.2rem auto;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.hd_nr_bg{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #000;
+  opacity: 0.1;
+  z-index: 3;
+}
+.hd_nr{
+  position: relative;
+  top:0;
+  padding:0.3rem 0.18rem;
+  z-index: 5;
+}
+.hx{
+  width:2rem;
+  height:1px;
+  background:#0f9b98;
+  margin-top:0.2rem;
+}
+.hd_lc_tit{
+  width:1.75rem;
+  height:0.4rem;
+}
+.hd_lc_tit span{
+  float:left;
+  display: inline-block;
+  width:0.4rem;
+  height:0.4rem;
+  color:#fff;
+  font-size:0.26rem;
+  text-align: center;
+  line-height: 0.4rem;
+  background: #0f9b98;
+  margin-right:0.05rem;
+}
+.hd_lc_tit span:last-child{
+  margin-right:0;
+}
+.hd_ll_ul{
+
+}
+.hd_ll_ul li{
+  float:left;
+  width:1.64rem;
+  height:2.35rem;
+  background:#fff;
+  text-align: center;
+  border-radius:0.1rem;
+  border:1px solid #6ad2cf;
+  box-shadow:0 0 8px #6ad2cf inset;
+  margin-right:0.35rem;
+}
+.hd_ll_ul li:last-child{
+  margin-right:0;
+}
+.hd_ll_icon{
+  width:0.76rem;
+  margin:0.6rem auto 0;
+}
+.Right_icon{
+  float:right;
+  margin: -1rem -0.25rem;
+  width: 0.15rem;
+}
+
+.hd_ll_mes{
+  width:1.2rem;
+  text-align: center;
+  margin:0 auto;
+  font-size:0.2rem;
+  line-height: 0.3rem;
+  color:#777;
+}
+.hd_gz_nr{
+  padding:0.35rem;
+  font-size:0.2rem;
+  color:#777;
+  background: #fff;
+  border-radius: 0.1rem;
+  border:1px solid #6ad2cf;
+  box-shadow:0 0 8px #6ad2cf inset;
+}
+.space30{
+  height:0.3rem;
+}
+.space20{
+  height:0.2rem;
+}
+.bg_bottom{
+  width:6.4rem;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+
+/*领取奖品弹层*/
+
+/*中奖弹层部分*/
+.mc{
+    width: 6.4rem;
+    height: 12rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #000;
+    opacity: 0.7;
+    display: none;
+}
+.use_con{
+  text-align: center;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  display: none;
+}
+.use_get{
+  position: relative;
+  width: 5.4rem;
+  padding-bottom: 0.6rem;
+  background-color: #fff;
+  border-radius: 15px;
+  border: solid 5px #83c453;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -1rem;
+  z-index: 101;
+}
+.close_lll {
+    width: 0.5rem;
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+}
+.congratulate_lll{
+  width: 2.79rem;
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+.congratulate_word_lll{
+  width: 2.09rem;
+  position: absolute;
+  z-index: 102;
+  top: 0.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.color666{
+  color: #666;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  width: 4.5rem;
+  text-align: center;
+  margin: 0.8rem auto 0;
+}
+.marginT0{
+  margin-top:0;
+}
+.colorf6661b{
+  color: #f6661b;
+}
+.btn_cons{
+  padding-top: 0.2rem;
+}
+.btn_tan{
+  width: 3.17rem;
+  height: 0.98rem;
+  border: none;
+  outline: none;
+  font-size: 0.3rem;
+  color: #fff;
+  border-radius: 15px;
+  display: block;
+  margin:0 auto;
+}
+.myGiftBtn{
+  background: url("../images/btn_back_lll.png") no-repeat;
+  background-size: 100%;
+}
+.btn_share{
+  width: 3.01rem;
+  height: 0.61rem;
+  color: #aacf66;
+  background-color: #fff;
+  border: solid 1px #aacf66;
+  margin-top: 0.1rem;
+}
