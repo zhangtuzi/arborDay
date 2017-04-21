@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="css/culture.css">
     <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
     <script src="js/public640.js" charset="utf-8"></script>
+    <script src="js/culture.js" charset="utf-8"></script>
   </head>
   <body>
+    <img src="images/arborDay3/bg_tp.jpg" class="bg_top">
     <div class="warpAll">
       <div style="height:1.6rem;"></div>
       <!-- 头部部分 -->
-      <img src="images/arborDay3/bg_tp.jpg" class="bg_top">
+
       <img src="images/arborDay3/yll_title.png" class="yll_title">
       <p class="hd_date">2017年5月10日-5月17日</p>
 
       <!-- 奖品抢夺已经抢光部分 -->
 
-      <div class="jq_qd height50">
-        <p>亲，奖品已抢光，<a class="color1" href="###">去看看其他活动</a>~</p>
+      <div class="jq_qd height130">
+        <p>恭喜您，已获得<span class="color1">1GB流量日包</span>，马上激活使用吧~</p>
+        <div class="ljjh_btn">立即激活</div>
       </div>
 
       <!-- 活动内容部分 -->
@@ -77,7 +80,6 @@
             <div class="hd_gz_nr">
               <p>1.活动规则活动规则活动规则活动规则活动规则活动规则活</p>
               <p>2.活动规则活动规则活动规则活动规则活动规则活动规则活</p>
-              <p>3.活动规则活动规则活动规则活动规则活动规则活动规则活</p>
             </div>
 
           </div>
@@ -88,22 +90,39 @@
 
       </div>
       <!-- 活动内容部分结束 -->
-      <img src="images/arborDay3/bg_bottom.png" class="bg_bottom">
-    </div>
-    <script type="text/javascript">
-    $(function(){
-      var win_height=$(window).height();
-      var body_height=$('body').height();
-      if(win_height<body_height+60){
-        // 当页面内容超过一屏幕时
-        $('.hd_gz_nr').css('margin-bottom',"0.6rem");
-        $('.warpAll').css("min-height",body_height);
-      }else{
-        // 当页面内容不足一屏幕时
-         $('.warpAll').css("min-height",win_height);
-      }
 
-    })
-    </script>
+    </div>
+    <img src="images/arborDay3/bg_bottom.png" class="bg_bottom">
+
+
+    <!-- 激活成功弹层 -->
+    <div class="mc"></div>
+    <div class="use_con" id="jh_con">
+        <img src="images/congratulate_lll.png" class="congratulate_lll">
+        <img src="images/congratulate_word_lll.png" class="congratulate_word_lll">
+        <div class="use_get">
+          <img src="images/close_lll.png" class="close_lll jh_close_zhl">
+        <p class="color666">已成功激活
+          <span class="colorf6661b">1GB流量日包</span>，
+          请到“<a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html" style="color:#0066ff;">我的奖品</a>”页面查看查看吧~
+        </p>
+            <div class="btn_cons">
+                <button class="btn_tan btn_share" id="btn_share">炫耀一下</button>
+                <button class="btn_tan gray_greenBtn" id="konwBtn">我知道了</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载小蒙层 -->
+    <ul class="jz_mc">
+      <div class="jz_text">激活中 请稍后...</div>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy jz_yd"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+      <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+    </ul>
+
   </body>
 </html>

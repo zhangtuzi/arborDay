@@ -1,20 +1,26 @@
 body{
   background: #75e8ff;
+  font-family: "微软雅黑";
 }
+*{
+		 -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; tap-highlight-color:rgba(0,0,0,0); tap-highlight-color:transparent;
+	}
 .clr{
   clear:both;
+}
+.dn{
+  display: none;
 }
 .warpAll{
   width:6.4rem;
   height:auto;
-  background:#75e8ff;
   font-family: "微软雅黑";
   position: relative;
   margin:0 auto;
   overflow: auto;
 }
 .body_bg_top,.bg_top{
-  width:6.4rem;
+  width:100%;
   position:absolute;
   left:0;
   top:0;
@@ -102,6 +108,9 @@ body{
 .height50{
   height:0.5rem;
 }
+.height60{
+  height:0.6rem;
+}
 .padding020{
   padding: 0.1rem 0.2rem;
   line-height: 0.4rem;
@@ -123,7 +132,7 @@ body{
   margin-left:0.1rem;
 }
 
-.ljlq_btn,.ljjh_Btn{
+.ljlq_btn,.ljjh_btn{
   margin:0.05rem auto;
   width:2.5rem;
   text-align: center;
@@ -247,10 +256,11 @@ body{
   height:0.2rem;
 }
 .bg_bottom{
-  width:6.4rem;
+  width:100%;
   position:absolute;
   bottom:0;
   left:0;
+  display: block;
 }
 
 
@@ -258,7 +268,7 @@ body{
 
 /*中奖弹层部分*/
 .mc{
-    width: 6.4rem;
+    width:100%;
     height: 12rem;
     position: fixed;
     top: 0;
@@ -335,7 +345,7 @@ body{
   display: block;
   margin:0 auto;
 }
-.myGiftBtn{
+.gray_greenBtn{
   background: url("../images/btn_back_lll.png") no-repeat;
   background-size: 100%;
 }
@@ -346,4 +356,39 @@ body{
   background-color: #fff;
   border: solid 1px #aacf66;
   margin-top: 0.1rem;
+}
+
+/*加载小蒙层 2017-04-19*/
+.jz_mc{
+  position:fixed;
+  width:2.7rem;
+  top:3rem;
+  left:50%;
+	margin-left:-1.35rem;
+  z-index: 999;
+  display: none;
+}
+.jz_text{
+  width: 100%;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  line-height: 0.6rem;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.jz_mc li{
+  float:left;
+  width:0.45rem;
+  text-align: center;
+  height: 0.5rem;
+  margin-top: -0.2rem;
+}
+.jz_mc .jz_sy{
+  width:0.17rem;
+  margin:0 auto;
+}
+.jz_yd{
+  width:0.23rem!important;
 }

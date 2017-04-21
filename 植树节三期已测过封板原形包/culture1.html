@@ -8,21 +8,28 @@
     <link rel="stylesheet" href="css/culture.css">
     <script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
     <script src="js/public640.js" charset="utf-8"></script>
+    <script src="js/culture.js" charset="utf-8"></script>
   </head>
   <body>
+    <img src="images/arborDay3/bg_tp.jpg" class="bg_top">
     <div class="warpAll">
       <div style="height:1.6rem;"></div>
       <!-- 头部部分 -->
-      <img src="images/arborDay3/bg_tp.jpg" class="bg_top">
+
       <img src="images/arborDay3/yll_title.png" class="yll_title">
       <p class="hd_date">2017年5月10日-5月17日</p>
 
-      <!-- 奖品抢夺已经抢光部分 -->
+      <!-- 进度条部分 -->
 
-      <div class="jq_qd">
-        <p>亲，本轮奖品已抢光，下轮准时来参加哦~</p>
-        <div class="color1 dis_inlineB">奖品下次投放时间</div>
-        <div class="next_date">10:00:00</div>
+      <div class="pro_warp">
+        <p class="pro_tit">培养值达到<span class="color1">25</span>
+          ，可在<span class="color1">517当天</span>
+          领取<span class="color1">1GB流量日包</span>哦~
+        </p>
+        <div class="pro_div">
+          <div class="pro_w"></div>
+          <div class="pro_wz">23/25</div>
+        </div>
       </div>
 
       <!-- 活动内容部分 -->
@@ -90,22 +97,7 @@
 
       </div>
       <!-- 活动内容部分结束 -->
-      <img src="images/arborDay3/bg_bottom.png" class="bg_bottom">
     </div>
-    <script type="text/javascript">
-    $(function(){
-      var win_height=$(window).height();
-      var body_height=$('body').height();
-      if(win_height<body_height+60){
-        // 当页面内容超过一屏幕时
-        $('.hd_gz_nr').css('margin-bottom',"0.6rem");
-        $('.warpAll').css("min-height",body_height);
-      }else{
-        // 当页面内容不足一屏幕时
-         $('.warpAll').css("min-height",win_height);
-      }
-
-    })
-    </script>
+    <img src="images/arborDay3/bg_bottom.png" class="bg_bottom">
   </body>
 </html>

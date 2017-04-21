@@ -8,6 +8,9 @@ body{
 .clr{
   clear:both;
 }
+.dn{
+  display: none;
+}
 .warpAll{
   width:6.4rem;
   height:auto;
@@ -129,7 +132,7 @@ body{
   margin-left:0.1rem;
 }
 
-.ljlq_btn,.ljjh_Btn{
+.ljlq_btn,.ljjh_btn{
   margin:0.05rem auto;
   width:2.5rem;
   text-align: center;
@@ -257,6 +260,7 @@ body{
   position:absolute;
   bottom:0;
   left:0;
+  display: block;
 }
 
 
@@ -341,7 +345,7 @@ body{
   display: block;
   margin:0 auto;
 }
-.myGiftBtn{
+.gray_greenBtn{
   background: url("../images/btn_back_lll.png") no-repeat;
   background-size: 100%;
 }

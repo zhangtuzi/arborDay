@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+  	<meta http-equiv="Cache-Control" content="no-cache">
+  	<meta http-equiv="Expires" content="0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>连环抽奖</title>
@@ -17,7 +17,6 @@
   </head>
   <body>
     <img src="images/arborDay3/description_bg.png" class="body_bg1" alt="">
-
   <div class="warpAll">
 
     <img src="images/arborDay3/treasure_tit.png" class="treasure_tit" alt="">
@@ -41,13 +40,15 @@
           <!-- 奖品列表 -->
 
           <ul class="gift_ul">
-            <li class="big_gift_li fl">
-              <img src="images/arborDay3/gift_1.jpg" class="big_gift">
-              <div class="gift_mes_div1 fr">
-                <p class="gift_tit1">IPad mini4</p>
-                <p class="gift_tit2">千元大奖等你来拿</p>
-                <p class="gift_xq">奖品详情</p>
-              </div>
+            <li class="small_gift_li fl">
+              <p class="gift_tit3">VR眼镜</p>
+              <img src="images/arborDay3/gift_2.jpg" class="gift_pic1">
+              <p class="gift_xq go_bg">奖品详情</p>
+            </li>
+            <li class="small_gift_li fl">
+              <p class="gift_tit3">10元电子券</p>
+              <img src="images/arborDay3/gift_4.jpg" class="gift_pic2">
+              <p class="gift_xq go_bg">奖品详情</p>
             </li>
             <li class="small_gift_li fl">
               <p class="gift_tit3">VR眼镜</p>
@@ -88,6 +89,7 @@
     <div class="bottomBtn_div">
       <div class="go_btn">您还有<span class="color2">2</span>次抽奖机会，去抽奖</div>
     </div>
+
 
 
   <!-- 奖品详情弹层 -->
@@ -134,46 +136,46 @@
 
   </div>
 
-      <!-- 抽奖宝箱蒙层 -->
-      <div class="mc"></div>
-      <div class="tc_div">
-        <img src="images/arborDay3/mc_tit.png" class="mc_tit z_110">
-        <img src="images/arborDay3/box_star.png" class="box_star z_110">
-        <img src="images/arborDay3/box.png" class="box_icon z_110">
-        <p class="mc_mes z_110">亲，您当前剩余<span class="color2">2</span>次抽奖机会</p>
-        <div class="mcBtn_div z_110">
-          <div class="backActive mcBtn fl">返回活动</div>
-          <a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html">
-            <div class="myGifts mcBtn fr">我的奖品</div>
-          </a>
-        </div>
-      </div>
+  <!-- 抽奖宝箱蒙层 -->
+  <div class="mc"></div>
+  <div class="tc_div">
+    <img src="images/arborDay3/mc_tit.png" class="mc_tit z_110">
+    <img src="images/arborDay3/box_star.png" class="box_star z_110">
+    <img src="images/arborDay3/box.png" class="box_icon z_110">
+    <p class="mc_mes z_110">亲，您当前剩余<span class="color2">2</span>次抽奖机会</p>
+    <div class="mcBtn_div z_110">
+      <div class="backActive mcBtn fl">返回活动</div>
+      <a href="http://124.192.56.213:99/hongbaoyu/wodejiangping.html">
+        <div class="myGifts mcBtn fr">我的奖品</div>
+      </a>
+    </div>
+  </div>
 
 
-      <!-- 中奖弹层失败 -->
-      <div class="use_con" id="cj_fail">
-          <img src="images/congratulate_lll.png" class="congratulate_lll">
-          <img src="images/fail_wz.png" class="congratulate_word_lll">
-          <div class="use_get">
-            <img src="images/close_lll.png" class="close_lll" id="use_close">
-          <p class="color666">差点中奖，不要气馁，再去试一试吧！</p>
-              <div class="btn_cons">
-                  <button class="btn_tan myGiftBtn" id="cj_again">继续抽奖</button>
-              </div>
+  <!-- 中奖弹层失败 -->
+  <div class="use_con" id="cj_fail">
+      <img src="images/congratulate_lll.png" class="congratulate_lll">
+      <img src="images/fail_wz.png" class="congratulate_word_lll">
+      <div class="use_get">
+        <img src="images/close_lll.png" class="close_lll" id="use_close">
+      <p class="color666">现在参加活动的小伙伴很多，一会再来试一试吧！</p>
+          <div class="btn_cons">
+              <button class="btn_tan myGiftBtn" id="Ikonw">我知道了</button>
           </div>
       </div>
+  </div>
 
 
-      <!-- 加载小蒙层 -->
-      <ul class="jz_mc">
-        <div class="jz_text">抽奖中 请稍后...</div>
-        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy jz_yd"></li>
-        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-        <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
-      </ul>
+  <!-- 加载小蒙层 -->
+  <ul class="jz_mc">
+    <div class="jz_text">抽奖中 请稍后...</div>
+    <li><img src="images/arborDay3/jz_sy.png" class="jz_sy jz_yd"></li>
+    <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+    <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+    <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+    <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+    <li><img src="images/arborDay3/jz_sy.png" class="jz_sy"></li>
+  </ul>
   <script type="text/javascript">
   $(function(){
 
@@ -215,10 +217,9 @@
       $('.mc,.use_con').hide();
     })
 
-    //继续抽奖
-    $('#cj_again').click(function(){
-      $('.use_con').hide();
-      $('.tc_div').show();
+    //我知道了
+    $('#Ikonw').click(function(){
+      $('.mc,.use_con').hide();
     })
 
     // 加载小蒙层动画
@@ -235,7 +236,6 @@
             $('.jz_sy').eq(jz_i).addClass('jz_yd');
         },500)
       }
-
 
 
 
@@ -459,7 +459,6 @@
               gift_i++;
             },50)
         }
-
   })
   </script>
   </body>

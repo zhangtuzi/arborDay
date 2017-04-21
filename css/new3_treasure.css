@@ -61,6 +61,7 @@
   border:1px solid #f4df64;
   border-radius:0.16rem 0 0 0.16rem;
   box-shadow: 1px 1px 5px #bfc57a;
+	z-index:10;
 }
   .main_div{
     position: absolute;
@@ -304,24 +305,30 @@
 /*针对苹果4*/
 @media screen and (max-height: 480px) {
 	/*蒙层部分*/
-
+	.use_rule_word_con {
+	    height: 83%!important;
+	    overflow: auto;
+	}
 	.mc_tit{
 		width:4.75rem;
 		position:fixed;
 		top:0.8rem;
-		left:0.825rem;
+		left:50%;
+		margin-left:-2.375rem;
 	}
 
 	.box_star{
 		position: absolute;
 		top:3.25rem;
-		left:1.7rem;
+		left:50%;
+		margin-left:-1.5rem;
 		width:3rem;
 	}
 	.box_icon{
 		position: absolute;
 		top:3.6rem;
-		left:2rem;
+		left:50%;
+		margin-left:-1.2rem;
 		width:2.4rem;
 	}
 	.mc_mes{
