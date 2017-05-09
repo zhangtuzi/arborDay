@@ -473,6 +473,7 @@
   position: absolute;
   width: 1.8rem;
   height: 0.5rem;
+	text-align: center;
   background-color: #fff;
   top: 0.25rem;
   left: 50%;
